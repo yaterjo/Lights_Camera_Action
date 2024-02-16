@@ -25,8 +25,22 @@ We started by individually opening, cleaning and exploring each data set.  They 
 
 Below are a few of the EDAs we came up with during our analysis. Again please refer to the notebook for a closer look into these EDAs.
 
+![Runtime Outliers](Images/RuntimeOutliers.png)
 First is a box plot of our runtime outliers from our Movie Data source.
+Second, is a box plot of our budget outliers also from the Movie Data source.  We used these box plots to determine our outliers, so we could deal with them accordingly.
 
+![Budget Outliers](Images/RuntimeOutliers2.png)
+
+
+These last two visualizations represent the Average Domestic Gross > $50 million by studio.  Both came from the Box Office Mojo dataset and show the same information. 
+The one on the top is made using MatPlotLib and the one on the bottom was made using Tableau.
+
+![Plt Box Office](Images/studiochart.png)    
+
+
+![Tableau Box Office](Images/TableauBoxOffice.png)
+
+Below is the link to Tableau Worksheet.
 ## Our Findings
 
 We took notice of the timing of films being released. We saw that the summertime and holiday seasons grossed the most, which also coincided with the films that had the highest budgets. Kids are out of school and the Oscars are around the corner. We suggest releasing movies during the summer and holiday season seem to be the most profitable times of the year.
