@@ -26,7 +26,7 @@ Below are a few of the EDAs we came up with during our analysis. Again please re
 
 First is a box plot of our runtime outliers from our Movie Data source.
 
-## Our Findings:
+## Our Findings
 
 We took notice of the timing of films being released. We saw that the summertime and holiday seasons grossed the most, which also coincided with the films that had the highest budgets. Kids are out of school and the Oscars are around the corner. We suggest releasing movies during the summer and holiday season seem to be the most profitable times of the year.
 
