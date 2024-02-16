@@ -41,6 +41,8 @@ The one on the top is made using MatPlotLib and the one on the bottom was made u
 ![Tableau Box Office](Images/TableauBoxOffice.png)
 
 Below is the link to Tableau Worksheet.
+https://public.tableau.com/app/profile/johnathan.yater1266/viz/Filmgraphs/Sheet3?publish=yes
+
 ## Our Findings
 
 We took notice of the timing of films being released. We saw that the summertime and holiday seasons grossed the most, which also coincided with the films that had the highest budgets. Kids are out of school and the Oscars are around the corner. We suggest releasing movies during the summer and holiday season seem to be the most profitable times of the year.
