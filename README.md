@@ -1,58 +1,62 @@
 ![clapper-board](https://st.depositphotos.com/1000153/3002/v/450/depositphotos_30026421-stock-illustration-clapper-board.jpg)
-# Lights, Camera, Action!
+##Movie Studio Market Analysis Project
+
+## Table of Contents
+- [Business Understanding](#business-problem)
+- [Data Understanding](#data-insights)
+- [Data Preparation and EDA](#data-preparation-and-eda)
+- [Visualization](#models)
+- [Results](#results)
+- [Next Steps](#recommended-next-steps)
+- [Conclusion](#conclusion)
+- [Requirements](#requirements)
 
 **Authors**: Johnathan Yater and Lotus Baumgarner
-## Overview
+  
+#Business Understanding
 
-Our company wants in on the fun of creating original video content like all the big companies aroung them. Because of this, the company has decided they want to start producing movies.  
-The problem is, they have never done this.  They are not sure where to start and they don't want to lose money on this.
+In an era where original video content is increasingly dominating the entertainment industry, our company has recognized the strategic opportunity to establish a new movie studio. The primary objective is to understand what types of films are currently thriving at the box office and to leverage these insights to guide the studio's production strategy. Our aim is to identify genres, budget ranges, and release timing that correlate with high box office performance, translating these findings into actionable recommendations for the studio's launch and future projects.
 
-## Business Understanding
+#Data Understanding
 
-We wanted to gather box office performance and trends to gain insight into our decision making.
+Three key datasets were utilized in this analysis:
 
-We were provided raw data sets from several sources stemming from budget, gross revenue, film length, genres, and popularity.
-We wanted to focus around return on investment based on production budgets, genre, and production companies..
+Movie Budgets: Contains data on production budgets, domestic gross, and worldwide gross revenue.
 
-We finalized it down to three datasets:  Movie Data, Box Office Mojo, and The Numbers.
-You can find these inside the data folder inside this repository.
+TMDB Movies: Provides insights into movie genres, popularity, and audience ratings.
 
-We used these three datasets to come to conclusions on how best to approach this new business adventure.
+Rotten Tomatoes Movie Info: Offers detailed movie genres, synopsis, and critical ratings.
 
-## Data Understanding and Analysis
+These datasets enabled a comprehensive examination of financial performance, audience reception, and genre popularity across a wide range of films.
 
-We started by individually opening, cleaning and exploring each data set.  They do vary in cleaning methods, size, ect. So, for a further look into the coding itself, feel free to read the jupyter notebook titles Movie_Data_Notebook.ipynb.
+#Data Preparation
 
-Below are a few of the EDAs we came up with during our analysis. Again please refer to the notebook for a closer look into these EDAs.
+Data cleaning and preparation steps included standardizing financial figures and converting them into numerical data, merging datasets based on movie titles to align genre information with financial data, organizing genres into broader categories for a more generalized analysis, and handling missing values and ensuring consistent data formats across all datasets.
 
-![Runtime Outliers](images/BudgetsOutliers.png)
-First is a box plot of our runtime outliers from our Movie Data source.
-Second, is a box plot of our budget outliers also from the Movie Data source.  We used these box plots to determine our outliers, so we could deal with them accordingly.
+#Data Analysis
 
-![Budget Outliers](images/BudgetsOutliers2.png)
+The analysis focused on identifying patterns and correlations between movie genres, production budgets, release timing, and box office success. Key areas of exploration included the financial success of movies based on worldwide and domestic gross revenue, the correlation between production budgets and box office gross, genre trends and their impact on box office performance, and the effect of movie release timing on financial success.
+
+#Visualization
+
+Several visualizations were created to illustrate findings, including bar charts showing the distribution of release months for top-grossing movies, heatmaps and scatter plots depicting the relationship between budget, audience ratings, and box office revenue, and comparisons of median ROI across different budget levels and genres.
+
+#Results
+
+Key findings include that Horror, Music, and Mystery genres exhibit higher ROIs, especially for films with moderate budgets, movies released during holiday seasons and summer months tend to perform better at the box office, higher production budgets correlate with larger gross revenues, though not necessarily with higher ROI, and positive audience ratings are associated with better financial performance, highlighting the importance of content quality.
+
+#Next Steps
+
+Future analysis could delve deeper into audience demographics, market segmentation, and the impact of streaming platforms on movie success. Additionally, employing advanced analytics and predictive modeling could further refine investment strategies and content selection.
+
+#Conclusion
+
+The analysis provides valuable insights into the current dynamics of the movie industry, highlighting strategic opportunities for our new movie studio. By focusing on cost-effective genres, optimizing release timing, and prioritizing content quality, the studio can position itself for success in the competitive entertainment landscape. Continuous market research and adaptability to emerging trends will be crucial for long-term growth and profitability.
 
 
-These last two visualizations represent the Average Domestic Gross > $50 million by studio.  Both came from the Box Office Mojo dataset and show the same information. 
-The one on the top is made using MatPlotLib and the one on the bottom was made using Tableau.
-
-![Plt Box Office](images/studiochart.png)    
-
-
-![Tableau Box Office](images/TableauBoxOffice.png)
-
-Below is the link to Tableau Worksheet.
-https://public.tableau.com/app/profile/johnathan.yater1266/viz/Filmgraphs/Sheet3?publish=yes
-
-## Our Findings
-
-We took notice of the timing of films being released. We saw that the summertime and holiday seasons grossed the most, which also coincided with the films that had the highest budgets. Kids are out of school and the Oscars are around the corner. We suggest releasing movies during the summer and holiday season seem to be the most profitable times of the year.
-
-We found the most common types of movies were drama, comedy, action, thriller, crime, and so on. Our objective was to make sure that we maximize our profits by seeing what had the best ROI. After analyzing the data, we saw that the top film genres with the highest ROI were horror, thriller, and drama.  While Sci-fi, comedy, and animation show to have a higher budget, they do not necessarily have the best ROI.
-Cast, marketing, costumes, travel, location, etc. could all play a factor in the budget. Spending too much money and not receiving a profit could be detrimental but, a smaller budget film could produce high reward and lead to more success.
-
-Our last idea was to take notice of the most profitable studio already in play. We think a collaboration with DreamWorks (PDW) would also be a safe course of exploration into the movie industry. A new film production studio can have starting costs anywhere from $10,000 for a small studio to over $1 million dollars for the larger studios.
-DreamWorks is well-known for animations, but the studio also produces horror films such as, The Haunting, The Ruins and many more. Since they have a high profit average, the company can use this collaboration to familiarize themselves with the industry. Not only what is required to start and run a studio, but also a better understanding of how to be successful in the business.
-
-## Conclusion
-
-We would want the company to consider horror, thriller, and drama genres. We also recommend considering partnering up or consulting with successfully experienced production companies. The Summer and holiday seasons seem to be the best time to release movies. And lastly, we would want to make sure we are wise with our investment and be strategic in how we spend money. A low budget has potentially the highest reward with minimal negative impact.  
+## Requirements
+- Python programming language
+- Libraries such as pandas, NumPy, and matplotlib
+- Jupyter Notebook for code execution and documentation
+- Access to the dataset containing movie information from Box Office Mojo, The MovieDB, The Numbers
+- Basic understanding of machine learning concepts and techniques
