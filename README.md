@@ -1,4 +1,3 @@
-![clapper-board](https://st.depositphotos.com/1000153/3002/v/450/depositphotos_30026421-stock-illustration-clapper-board.jpg)
 ##Movie Studio Market Analysis Project
 
 ## Table of Contents
